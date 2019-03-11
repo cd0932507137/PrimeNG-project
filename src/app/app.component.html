@@ -2,7 +2,7 @@
 <p-calendar [(ngModel)]="value"></p-calendar>
 
 <h3>Multi Sort with MetaKey</h3>
-<p-table [columns]="cols" [value]="DataArray" sortMode="multiple">
+<p-table [columns]="cols" [value]="DataArray" [paginator]="true" [rows]="10" sortMode="multiple">
     <ng-template pTemplate="header" let-columns>
         <tr>
             <th *ngFor="let col of columns" [pSortableColumn]="col.field">
