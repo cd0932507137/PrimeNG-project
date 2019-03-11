@@ -8,6 +8,8 @@ import { AppComponent } from './app.component';
 
 import { CalendarModule } from 'primeng/calendar';
 import { AutoCompleteModule } from 'primeng/autocomplete';
+import { DataTableModule } from 'primeng/primeng';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { AutoCompleteModule } from 'primeng/autocomplete';
     AppRoutingModule,
     BrowserAnimationsModule,
     CalendarModule,
-    AutoCompleteModule
+    AutoCompleteModule,
+    DataTableModule,
+    TableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
